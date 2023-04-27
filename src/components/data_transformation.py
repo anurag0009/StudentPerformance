@@ -33,7 +33,7 @@ class DataTransformation:
                 ('scaler' , StandardScaler())
                 ]
             )
-            print(num_pipeline)
+            #print(num_pipeline)
 
             cat_pipeline = Pipeline(
                 steps=[
@@ -42,7 +42,7 @@ class DataTransformation:
                 ('scaler', StandardScaler(with_mean=False))
                 ]
             )
-            print(cat_pipeline)
+            #print(cat_pipeline)
 
             logging.info("Numnerical columns standard scalling completed")
             logging.info("Categorical columns encoading completed")
@@ -53,7 +53,7 @@ class DataTransformation:
                 ('cat_pipeline',cat_pipeline,categorical_columns)
                 ]
             )
-            print(preprocessor)
+            #print(preprocessor)
 
             return preprocessor
         

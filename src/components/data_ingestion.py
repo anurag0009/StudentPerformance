@@ -59,5 +59,4 @@ if __name__=="__main__":
     train_arr,test_arr,_ =data_transformation.initiate_data_transformation(train_data,test_data) # return hat we return in data transformnation here _ means me do not need the this path fie we already saved it
 
     modeltrainer = ModelTrainer()
-    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))  #print r2score
-
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
