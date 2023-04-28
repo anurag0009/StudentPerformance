@@ -53,7 +53,7 @@ class DataTransformation:
                 ('cat_pipeline',cat_pipeline,categorical_columns)
                 ]
             )
-            #print(preprocessor)
+            print(preprocessor)
 
             return preprocessor
         
